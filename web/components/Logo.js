@@ -5,7 +5,6 @@ import config from "@/config"
 export default function Logo({ className = "size-7", variant = "default" }) {
   if (config.brand.logoSrc) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
       <img
         src={config.brand.logoSrc}
         alt=""
