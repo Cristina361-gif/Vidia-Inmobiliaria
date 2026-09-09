@@ -1,22 +1,18 @@
 import Hero from "@/components/landing/Hero"
-import Problem from "@/components/landing/Problem"
-import Features from "@/components/landing/Features"
-import Pricing from "@/components/landing/Pricing"
-import FAQ from "@/components/landing/FAQ"
+import ValuationForm from "@/components/landing/ValuationForm"
+import Catalog from "@/components/landing/Catalog"
+import Fiscal from "@/components/landing/Fiscal"
 import FinalCta from "@/components/landing/FinalCta"
-import Waitlist from "@/components/landing/Waitlist"
 import config from "@/config"
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Problem />
-      <Features />
-      {config.features.pricing && <Pricing />}
-      <FAQ />
+      {config.features.valuationForm && <ValuationForm />}
+      {config.features.catalog && <Catalog />}
+      {config.features.fiscalSection && <Fiscal />}
       <FinalCta />
-      {config.features.waitlist && <Waitlist />}
     </>
   )
 }

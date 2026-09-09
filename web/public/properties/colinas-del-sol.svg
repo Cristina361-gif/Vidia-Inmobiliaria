@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Casa en Colinas del Sol">
+  <rect width="800" height="500" fill="#EAF2F8"/>
+  <polygon points="0,320 180,240 360,310 540,200 800,300 800,500 0,500" fill="#D4AF37" opacity="0.25"/>
+  <rect y="360" width="800" height="140" fill="#CBD5E1"/>
+  <polygon points="220,360 400,200 580,360" fill="#0A192F"/>
+  <rect x="280" y="260" width="240" height="160" fill="#F8FAFC"/>
+  <rect x="370" y="320" width="60" height="100" fill="#0A192F"/>
+  <rect x="310" y="290" width="44" height="36" fill="#94A3B8"/>
+  <rect x="446" y="290" width="44" height="36" fill="#94A3B8"/>
+</svg>

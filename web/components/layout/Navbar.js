@@ -4,11 +4,12 @@ import config from "@/config"
 import Logo from "@/components/Logo"
 
 export default function Navbar() {
+  const cta = config.landing.navCta || config.landing.hero.cta
+
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-base-200 bg-base-100/80 backdrop-blur">
+    <header className="sticky top-0 z-40 w-full border-b border-base-200 bg-base-100/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
-          {/* Menú móvil */}
           <div className="dropdown md:hidden">
             <label tabIndex={0} className="btn btn-ghost btn-sm px-2" aria-label="Abrir menú">
               <Menu className="size-5" />
@@ -50,8 +51,8 @@ export default function Navbar() {
               Entrar
             </Link>
           )}
-          <Link href="#waitlist" className="btn btn-sm btn-accent">
-            {config.landing.hero.cta.label}
+          <Link href={cta.href} className="btn btn-sm btn-accent">
+            {cta.label}
           </Link>
         </div>
       </nav>
