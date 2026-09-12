@@ -1,19 +1,12 @@
 import "./globals.css"
-import { Space_Grotesk, DM_Sans } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import config from "@/config"
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-})
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-dm-sans",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
   display: "swap",
 })
 
@@ -48,7 +41,7 @@ export default function RootLayout({ children }) {
       lang={config.app.locale}
       data-theme="vibecoding"
       suppressHydrationWarning
-      className={`${spaceGrotesk.variable} ${dmSans.variable}`}
+      className={inter.variable}
       style={{ "--color-primary": config.brand.primary }}
     >
       <body className="bg-base-100 text-base-content">

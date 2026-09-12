@@ -2,8 +2,8 @@
 @plugin "daisyui";
 
 /* ============================================================
-   Tema de marca Vibecoding (Flat Design)
-   Paleta: azul cielo (primary/accent/CTA) + slate (neutral).
+   Tema de marca Vidia Inmobiliaria
+   Paleta: navy institucional (#0A192F) + dorado CTA (#D4AF37).
    El primary real lo inyecta config.brand.primary desde layout.js
    como --color-primary inline (config = fuente de verdad).
    ============================================================ */
@@ -12,12 +12,12 @@
   default: true;
   prefersdark: false;
   color-scheme: light;
-  --color-primary: #0ea5e9;
+  --color-primary: #0A192F;
   --color-primary-content: #ffffff;
-  --color-secondary: #0284c7;
+  --color-secondary: #0A192F;
   --color-secondary-content: #ffffff;
-  --color-accent: #0ea5e9;
-  --color-accent-content: #ffffff;
+  --color-accent: #D4AF37;
+  --color-accent-content: #0A192F;
   --color-neutral: #1e293b;
   --color-neutral-content: #f8fafc;
   --color-base-100: #ffffff;
@@ -38,12 +38,12 @@
   default: false;
   prefersdark: true;
   color-scheme: dark;
-  --color-primary: #38bdf8;
-  --color-primary-content: #0f172a;
-  --color-secondary: #0ea5e9;
-  --color-secondary-content: #0f172a;
-  --color-accent: #38bdf8;
-  --color-accent-content: #0f172a;
+  --color-primary: #D4AF37;
+  --color-primary-content: #0A192F;
+  --color-secondary: #D4AF37;
+  --color-secondary-content: #0A192F;
+  --color-accent: #D4AF37;
+  --color-accent-content: #0A192F;
   --color-neutral: #e2e8f0;
   --color-neutral-content: #0f172a;
   --color-base-100: #0f172a;
@@ -64,18 +64,22 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font-dm-sans, ui-sans-serif, system-ui, sans-serif);
+  font-family: var(--font-inter, var(--font-dm-sans, ui-sans-serif, system-ui, sans-serif));
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tipografía de display: headings con Space Grotesk */
+/* Encabezados: Inter en semibold/bold para firmeza corporativa */
 h1,
 h2,
 h3,
 h4,
 .font-heading {
-  font-family: var(--font-space-grotesk, var(--font-dm-sans, ui-sans-serif, system-ui, sans-serif));
+  font-family: var(--font-inter, var(--font-space-grotesk, ui-sans-serif, system-ui, sans-serif));
 }
 
 /* ============================================================

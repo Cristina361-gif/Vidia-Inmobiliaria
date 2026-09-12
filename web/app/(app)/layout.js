@@ -23,8 +23,8 @@ export default async function AppLayout({ children }) {
       <header className="sticky top-0 z-40 border-b border-base-200 bg-base-100">
         <div className="flex items-center justify-between px-4 py-3">
           <Link href="/dashboard" className="flex items-center gap-2 font-bold">
-            <Logo className="size-7" />
-            {config.brand.logoText}
+            <Logo className="h-12 w-auto" />
+            {config.brand.showLogoText && config.brand.logoText}
           </Link>
           <UserMenu user={user} />
         </div>

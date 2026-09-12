@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Casa en Nombre de Dios">
+  <rect width="800" height="500" fill="#F8FAFC"/>
+  <rect y="300" width="800" height="200" fill="#E2E8F0"/>
+  <rect x="160" y="180" width="480" height="220" fill="#0A192F"/>
+  <rect x="160" y="160" width="480" height="28" fill="#D4AF37"/>
+  <rect x="210" y="220" width="70" height="50" fill="#CBD5E1"/>
+  <rect x="320" y="220" width="70" height="50" fill="#CBD5E1"/>
+  <rect x="430" y="220" width="70" height="50" fill="#CBD5E1"/>
+  <rect x="540" y="250" width="50" height="150" fill="#F8FAFC"/>
+  <circle cx="680" cy="90" r="36" fill="#D4AF37" opacity="0.85"/>
+</svg>
