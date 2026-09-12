@@ -29,9 +29,10 @@ const config = {
   brand: {
     // Color primario en HEX. DaisyUI lo aplica como --color-primary via theme.
     primary: "#0A192F",
-    // Logo: ruta a /public/logo.png o /public/logo.svg cuando lo tengas
-    logoText: "Vidia Inmobiliaria",
-    logoSrc: null,
+    // Logo oficial (wordmark). showLogoText = false para no repetir el nombre.
+    logoText: "VIDIA Inmobiliaria Real del Norte",
+    logoSrc: "/logo.png",
+    showLogoText: false,
     radius: "1rem",
   },
 

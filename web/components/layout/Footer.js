@@ -24,10 +24,12 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-10 md:grid-cols-[1.5fr_repeat(3,1fr)]">
           <div>
-            <div className="flex items-center gap-2">
-              <Logo className="size-6" variant="onDark" />
-              <span className="text-lg font-bold">{config.brand.logoText}</span>
+            <div className="inline-flex items-center rounded-xl bg-white p-3">
+              <Logo className="h-24 w-auto" />
             </div>
+            {config.brand.showLogoText && (
+              <p className="mt-3 text-lg font-bold">{config.brand.logoText}</p>
+            )}
             <p className="mt-3 max-w-xs text-sm text-primary-content/70">{tagline}</p>
             <p className="mt-3 text-sm text-primary-content/70">{config.contact.city}</p>
             {config.contact.email && (

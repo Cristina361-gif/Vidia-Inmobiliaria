@@ -27,8 +27,8 @@ export default function Navbar() {
           </div>
 
           <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
-            <Logo className="size-7" />
-            {config.brand.logoText}
+            <Logo className="h-14 w-auto md:h-16" />
+            {config.brand.showLogoText && config.brand.logoText}
           </Link>
         </div>
 

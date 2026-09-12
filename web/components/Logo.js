@@ -1,14 +1,14 @@
 import config from "@/config"
 
-// Si hay logoSrc en config, se muestra la imagen.
+// Si hay logoSrc en config, se muestra la imagen oficial.
 // Si no, un isotipo de edificios (navy / dorado) como marca temporal.
-export default function Logo({ className = "size-7", variant = "default" }) {
+export default function Logo({ className, variant = "default" }) {
   if (config.brand.logoSrc) {
     return (
       <img
         src={config.brand.logoSrc}
-        alt=""
-        className={`object-contain ${className}`}
+        alt={config.brand.logoText}
+        className={`object-contain ${className || "h-14 w-auto"}`}
       />
     )
   }
@@ -20,7 +20,7 @@ export default function Logo({ className = "size-7", variant = "default" }) {
 
   return (
     <span
-      className={`inline-flex items-center justify-center rounded-lg ${wrap} ${className}`}
+      className={`inline-flex items-center justify-center rounded-lg ${wrap} ${className || "size-7"}`}
       aria-hidden
     >
       <svg viewBox="0 0 24 24" fill="none" className="size-[70%]">

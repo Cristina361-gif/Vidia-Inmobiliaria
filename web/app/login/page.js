@@ -20,8 +20,8 @@ export default async function LoginPage({ searchParams }) {
     <main className="flex min-h-screen items-center justify-center bg-base-200 px-4">
       <div className="w-full max-w-sm rounded-2xl border border-base-200 bg-base-100 p-8 shadow-sm">
         <Link href="/" className="flex items-center gap-2 text-lg font-bold">
-          <Logo className="size-7" />
-          {config.brand.logoText}
+          <Logo className="h-16 w-auto" />
+          {config.brand.showLogoText && config.brand.logoText}
         </Link>
 
         <h1 className="mt-6 text-2xl font-bold tracking-tight">Entra a tu cuenta</h1>
